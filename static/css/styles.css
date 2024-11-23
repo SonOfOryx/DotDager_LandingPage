@@ -1,0 +1,43 @@
+.bg-img {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    filter: brightness(0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -2;
+}
+
+body{
+    background-attachment: fixed;
+}
+
+.nav-link{
+    position: relative;
+}
+
+.navbar-brand{
+    border-bottom: 2px transparent;
+}
+
+.navbar{
+    margin-inline:10px ;
+
+}
+
+.nav-link::after{
+    content: '';
+    opacity: 0;
+    transition: all 0.2s;
+    height: 2.5px;
+    width: 100%;
+    background-color: greenyellow;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.nav-link:hover::after{
+    opacity: 1;
+}
